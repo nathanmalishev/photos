@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { title, bucket, region, root_photos_key } from './meta.json'
+import { title, footer_message, bucket, region, root_photos_key } from './meta.json'
 import './App.css';
 import StackGrid, { transitions, easings } from "react-stack-grid";
 import AWS from 'aws-sdk'
@@ -98,7 +98,7 @@ class App extends Component {
 
 
       <footer>
-        <p> Thanks for stopping by, if you liked any photos <br /> email nathan.malishev@gmail.com for a hi-rez copy or for enquiries</p>
+        <p> {footer_message }</p>
       </footer>
 
       </div>
